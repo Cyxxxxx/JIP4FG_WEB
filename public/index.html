@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>JIP4FG</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="apple-mobile-web-app-title" content="JIP4FG">
+  <meta name="apple-mobile-web-app-capable" content="yes"/>
+  <meta name="description" content="JIP4FG是一个为应届毕业生提供求职信息的平台，旨在帮助应届毕业生获取心仪的岗位信息">
+  <meta name="keywords" content="JIP4FG,求职,找工作,应届,招聘,投简历,春招,秋招,实习,校招,社招"/>
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, viewport-fit=cover">
+  <meta name="browsermode" content="application">
+  <meta name="full-screen" content="yes" />
+  <meta name="x5-fullscreen" content="true" />
+  <meta name="x5-page-mode" content="app" />
+  <meta name="360-fullscreen" content="true" />
+  <link rel="icon" href="<%= BASE_URL %>icon.png">
+  <script data-ad-client="ca-pub-7308895271330819" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+  <!-- 导入cdn UIcss -->
+  <!-- <link href="https://cdn.bootcss.com/element-ui/2.13.0/theme-chalk/index.css" rel="stylesheet"> -->
+  <style type="text/css">
+    .icon {
+       width: 1em; height: 1em;
+       vertical-align: middle;
+       fill: currentColor;
+       overflow: hidden;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- <script src="https://cdn.bootcss.com/vue/2.6.11/vue.runtime<%= process.env.NODE_ENV === 'production' ? '.min.js' : '.js' %>" crossorigin="anonymous"></script> -->
+  <!-- vue-router -->
+  <!-- <script src="https://cdn.bootcss.com/vue-router/3.1.3/vue-router<%= process.env.NODE_ENV === 'production' ? '.min.js' : '.js' %>" crossorigin="anonymous"></script> -->
+  <!-- <script src="https://cdn.bootcss.com/element-ui/2.13.0/index.js" crossorigin="anonymous"></script> -->
+  <noscript>
+    <strong>We're sorry but JIP4FG doesn't work properly without JavaScript enabled. Please enable it to
+      continue.</strong>
+  </noscript>
+  <div id="app"></div>
+  <!-- built files will be auto injected -->
+</body>
+
+<script>
+  window.onload = function () {
+    document.body.addEventListener('touchstart', function (event) {
+      if (event.touches.length > 1) {
+        event.preventDefault();
+      }
+    }, {
+      passive: false  // 关闭被动监听
+    });
+    var lastTouchEnd = 0;
+    document.body.addEventListener('touchend', function (event) {
+      var now = (new Date()).getTime();
+      if (now - lastTouchEnd <= 300) {
+        event.preventDefault();
+      }
+      lastTouchEnd = now;
+    }, false);
+};
+</script>
+<script>
+if ((location.href || '').indexOf('vconsole=true') > -1) {
+    document.write('<script src="https://cdn.bootcdn.net/ajax/libs/vConsole/3.3.4/vconsole.min.js"><\/script>');
+    document.write('<script>new VConsole()<\/script>');
+}
+</script>
+<script src="//at.alicdn.com/t/font_1625300_4em8l0cbaqk.js"></script>
+<script data-ad-client="ca-pub-7308895271330819" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-158701012-2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-158701012-2');
+</script>
+</html>

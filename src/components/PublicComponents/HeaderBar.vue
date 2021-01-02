@@ -324,13 +324,13 @@ export default {
       switch (searchType) {
         case 'company': {
           this.$router.push({
-            path: `/company/infoPage?companyName=` + keyword,
+            path: `/company/infoPage?companyName=` + encodeURIComponent(keyword),
           });
           break;
         }
         case 'job': {
           this.$router.push({
-            path: `/job/infoPage?jobName=` + keyword,
+            path: `/job/infoPage?jobName=` + encodeURIComponent(keyword),
           });
           break;
         }
